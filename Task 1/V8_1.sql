@@ -17,7 +17,7 @@ CREATE TABLE sales.Orders (OrderNum INT NULL);
 GO
 
 BACKUP DATABASE ALEXEY_KOSYUK
-	TO DISK = 'F://BSUIR/БД/Database-lab-works/Task 1/ALEXEY_KOSYUK.bak'
+	TO DISK = 'E://BSUIR/БД/Database-lab-works/Task 1/ALEXEY_KOSYUK.bak'
 	WITH 
 		FORMAT,
 		NAME = 'ALEXEY_KOSYUK.bak',
@@ -31,7 +31,7 @@ DROP DATABASE ALEXEY_KOSYUK;
 GO
 
 RESTORE DATABASE ALEXEY_KOSYUK
-	FROM DISK = 'F://BSUIR/БД/Database-lab-works/Task 1/ALEXEY_KOSYUK.bak'
+	FROM DISK = 'E://BSUIR/БД/Database-lab-works/Task 1/ALEXEY_KOSYUK.bak'
 	WITH
 		FILE = 1,
 		RECOVERY;
@@ -39,3 +39,4 @@ GO
 
 USE ALEXEY_KOSYUK;
 GO
+
