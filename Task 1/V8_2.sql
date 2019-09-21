@@ -20,7 +20,8 @@ WHERE MaritalStatus = 'S' AND YEAR(BirthDate) <= 1960;
 -- Second subtask
 SELECT BusinessEntityID, JobTitle, MaritalStatus, Gender, HireDate 
 FROM [HumanResources].Employee
-WHERE JobTitle = 'Design Engineer';
+WHERE JobTitle = 'Design Engineer'
+ORDER BY HireDate DESC;
 
 -- Third subtask
 SELECT BusinessEntityID, DepartmentID, StartDate, EndDate, YEAR(ISNULL(EndDate, GETDATE())) - YEAR(StartDate) AS 'YearsWorked'  
