@@ -87,3 +87,5 @@ DROP CONSTRAINT
 
 -- f
 DROP TABLE [dbo].[Address];
+
+GO
