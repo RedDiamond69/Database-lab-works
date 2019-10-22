@@ -43,9 +43,9 @@ SELECT
 	[ADR].[PersonName]
 FROM [dbo].[Address] AS [ADR]
 INNER JOIN [AdventureWorks2012].[Person].[StateProvince] AS [SP]
-ON [ADR].[StateProvinceID] = [SP].[StateProvinceID]
+ON [ADR].[StateProvinceID] = [SP].[StateProvinceID] AND [ADR].[StateProvinceID] = 77
 	INNER JOIN [AdventureWorks2012].[Person].[CountryRegion] AS [CR]
-	ON [CR].[CountryRegionCode] = [SP].[CountryRegionCode] AND [ADR].[StateProvinceID] = 77;
+	ON [CR].[CountryRegionCode] = [SP].[CountryRegionCode];
 
 -- c
 UPDATE [dbo].[Address]
